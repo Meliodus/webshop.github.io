@@ -1,6 +1,2 @@
 
-# webshop Prototype..InProgress
-
-
-# webshop.github.io
-# webshop.github.io
+# webshop Prototype..Production Build InProgress.....
