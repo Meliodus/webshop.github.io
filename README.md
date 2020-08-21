@@ -1,13 +1,5 @@
 
-# webshop
-
-### `npm start`
-
-
-
-### `npm test`
-
-
+# webshop Prototype..InProgress
 
 
 # webshop.github.io
