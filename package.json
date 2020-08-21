@@ -1,8 +1,8 @@
 {
-  "name": "WebShop",
+  "name": "webshop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://whizgendigital.github.io/webshop",
+  "homepage": "http://WhizGenDigital.github.io/webshop",
   "dependencies": {
     "bootstrap": "^4.5.2",
     "font-awesome": "^4.7.0",

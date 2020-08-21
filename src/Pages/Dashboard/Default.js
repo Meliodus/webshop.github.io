@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col,Card,Form, InputGroup,Table, Tabs, Tab, Button} from 'react-bootstrap';
-import {Map, Marker, GoogleApiWrapper, InfoWindow, Polyline, Polygon}  from 'google-maps-react';
+// import {Map, Marker, GoogleApiWrapper, InfoWindow, Polyline, Polygon}  from 'google-maps-react';
 
 import Aux from "../../hoc/_Aux";
 import Pages from "../../store/constant";
