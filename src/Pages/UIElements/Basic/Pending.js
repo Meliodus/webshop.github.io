@@ -1,53 +1,198 @@
-import React from 'react';
-import { Row, Col, Tabs, Tab} from 'react-bootstrap';
-// Nav
-import Card from "../../../App/components/MainCard";
+import React from "react";
+import {
+  Row,
+  Col,
+  Card,
+  //   Form,
+  //   Button,
+  //   InputGroup,
+  //   FormControl,
+  //   DropdownButton,
+  //   Dropdown,
+  Table,
+} from "react-bootstrap";
 
 import Aux from "../../../hoc/_Aux";
+import Pages from "../../../store/constant";
+import avatar1 from "../../../assets/images/user/avatar-1.jpg";
+import avatar2 from "../../../assets/images/user/avatar-2.jpg";
+import avatar3 from "../../../assets/images/user/avatar-3.jpg";
+import MultiBarChart from "../../Charts/Nvd3Chart/MultiBarChart";
 
-class TabsPills extends React.Component {
-    render() {
-        return (
-            <Aux>
-                <Row>
-                    <Col>
-                        <h5>Pending Domains</h5>
-                        <hr/>
-                        <Tabs  defaultActiveKey="home">
-                            <Tab eventKey="home" title="HOME">
-                                <p>Lofem Ipsum</p>
-                            </Tab>
-                            <Tab eventKey="profile" title="PROFILE">
-                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-                            </Tab>
-                            <Tab eventKey="contact" title="CONTACT">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
-                            </Tab>
-                        </Tabs>
-                        <h5 className="mt-4">Vertical Pills</h5>
-                        <hr/>
-                            <Row>
-                                <Col sm={9}>    
-                        <Card title='Hello Card' isOption>
-                            <p>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            </p>
-                        </Card>
-                   
-                                   
-                                </Col>
-                            </Row>
-                      
-                    </Col>
-                </Row>
+class FormsElements extends React.Component {
+  render() {
+    return (
+      <Aux>
+        <Row>
+          {/* md={6} xl={8} */}
 
-
-            </Aux>
-        );
-    }
+          <Col>
+            <Card className="Recent-Users">
+              <Card.Header>
+                <Card.Title as="h5">Clients</Card.Title>
+              </Card.Header>
+              <Card.Body className="px-0 py-2">
+                <Table responsive hover>
+                  <tbody>
+                    <tr className="unread">
+                      <td>
+                        <img
+                          className="rounded-circle"
+                          style={{ width: "40px" }}
+                          src={avatar1}
+                          alt="activity-user"
+                        />
+                      </td>
+                      <td>
+                        <h6 className="mb-1">Isabella Doe</h6>
+                        <p className="m-0">
+                          Lorem Ipsum is simply dummy text of…
+                        </p>
+                      </td>
+                      <td>
+                        <h6 className="text-muted">
+                          <i className="fa fa-circle text-c-red f-10 m-r-15" />
+                          11 MAY 12:56
+                        </h6>
+                      </td>
+                      <td>
+                        <a
+                          href={Pages.BLANK_LINK}
+                          className="label theme-pending text-white f-12"
+                        >
+                          Pending
+                        </a>
+                      </td>
+                    </tr>
+                    <tr className="unread">
+                      <td>
+                        <img
+                          className="rounded-circle"
+                          style={{ width: "40px" }}
+                          src={avatar2}
+                          alt="activity-user"
+                        />
+                      </td>
+                      <td>
+                        <h6 className="mb-1">Mathilde Doe</h6>
+                        <p className="m-0">
+                          Lorem Ipsum is simply dummy text of…
+                        </p>
+                      </td>
+                      <td>
+                        <h6 className="text-muted">
+                          <i className="fa fa-circle text-c-red f-10 m-r-15" />
+                          11 MAY 10:35
+                        </h6>
+                      </td>
+                      <td>
+                        <a
+                          href={Pages.BLANK_LINK}
+                          className="label theme-pending text-white f-12"
+                        >
+                          Pending
+                        </a>
+                      </td>
+                    </tr>
+                    <tr className="unread">
+                      <td>
+                        <img
+                          className="rounded-circle"
+                          style={{ width: "40px" }}
+                          src={avatar3}
+                          alt="activity-user"
+                        />
+                      </td>
+                      <td>
+                        <h6 className="mb-1">Karla Doe</h6>
+                        <p className="m-0">
+                          Lorem Ipsum is simply dummy text of…
+                        </p>
+                      </td>
+                      <td>
+                        <h6 className="text-muted">
+                          <i className="fa fa-circle text-c-red f-10 m-r-15" />9
+                          MAY 17:38
+                        </h6>
+                      </td>
+                      <td>
+                        <a
+                          href={Pages.BLANK_LINK}
+                          className="label theme-pending text-white f-12"
+                        >
+                          Pending
+                        </a>
+                      </td>
+                    </tr>
+                    <tr className="unread">
+                      <td>
+                        <img
+                          className="rounded-circle"
+                          style={{ width: "40px" }}
+                          src={avatar1}
+                          alt="activity-user"
+                        />
+                      </td>
+                      <td>
+                        <h6 className="mb-1">Ida Doe</h6>
+                        <p className="m-0">
+                          Lorem Ipsum is simply dummy text of…
+                        </p>
+                      </td>
+                      <td>
+                        <h6 className="text-muted f-w-300">
+                          <i className="fa fa-circle text-c-red f-10 m-r-15" />
+                          19 MAY 12:56
+                        </h6>
+                      </td>
+                      <td>
+                        <a
+                          href={Pages.BLANK_LINK}
+                          className="label theme-pending text-white f-12"
+                        >
+                          Pending
+                        </a>
+                      </td>
+                    </tr>
+                    <tr className="unread">
+                      <td>
+                        <img
+                          className="rounded-circle"
+                          style={{ width: "40px" }}
+                          src={avatar2}
+                          alt="activity-user"
+                        />
+                      </td>
+                      <td>
+                        <h6 className="mb-1">Albert Doe</h6>
+                        <p className="m-0">
+                          Lorem Ipsum is simply dummy text of…
+                        </p>
+                      </td>
+                      <td>
+                        <h6 className="text-muted">
+                          <i className="fa fa-circle text-c-red f-10 m-r-15" />
+                          21 July 12:56
+                        </h6>
+                      </td>
+                      <td>
+                        <a
+                          href={Pages.BLANK_LINK}
+                          className="label theme-pending text-white f-12"
+                        >
+                          Pending
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </Aux>
+    );
+  }
 }
 
-export default TabsPills;
+export default FormsElements;

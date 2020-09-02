@@ -1,6 +1,6 @@
 import React from 'react';
 import {Row, Col,Card,Form, InputGroup,Table, Tabs, Tab, Button} from 'react-bootstrap';
-// import {Map, Marker, GoogleApiWrapper, InfoWindow, Polyline, Polygon}  from 'google-maps-react';
+import {Map, Marker, GoogleApiWrapper, InfoWindow, Polyline, Polygon}  from 'google-maps-react';
 
 import Aux from "../../hoc/_Aux";
 import Pages from "../../store/constant";
@@ -143,7 +143,7 @@ class Dashboard extends React.Component {
                                     </div>
                                     <div className="col text-right">
                                         <h3>12,281</h3>
-                                        <h5 className="text-c-green mb-0">+7.2% <span className="text-muted">Domains</span></h5>
+                                        <h5 className="text-c-green mb-0">+7.2% <span className="text-muted">Active Domains</span></h5>
                                     </div>
                                 </div>
                             </Card.Body>

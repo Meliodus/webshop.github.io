@@ -1,2 +1,15 @@
 
-# webshop Prototype..Production Build InProgress.....
+# webshop
+
+### `npm start`
+
+
+
+### `npm test`
+
+
+
+
+# shopbuilder
+# shopbuilder
+# shopbuilder
